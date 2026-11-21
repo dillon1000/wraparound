@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"package": "net.wraparound.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ClientChunkCacheMixin",
+		"ClientLevelMixin",
+		"ClientPacketListenerMixin",
+		"EntityStateMixin",
+		"LevelExtractorMixin",
+		"LevelChunkSectionAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

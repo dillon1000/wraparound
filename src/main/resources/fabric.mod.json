@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "wraparound",
+	"version": "${version}",
+	"name": "Wraparound",
+	"description": "Glue the edges of the world together: cylinder, torus or Klein bottle. Seamless, with terrain that lines up.",
+	"authors": [],
+	"license": "CC0-1.0",
+	"icon": "assets/wraparound/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wraparound.Wraparound"
+		],
+		"client": [
+			"net.wraparound.client.WraparoundClient"
+		]
+	},
+	"mixins": [
+		"wraparound.mixins.json",
+		{
+			"config": "wraparound.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
